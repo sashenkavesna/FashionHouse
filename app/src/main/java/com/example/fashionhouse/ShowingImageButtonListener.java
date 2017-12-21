@@ -13,10 +13,8 @@ import java.util.List;
 
 
 public class ShowingImageButtonListener implements View.OnClickListener {
-    Activity context;
-    ImageView girl;
-
-    //show
+    private Activity context;
+    private ImageView girl;
 
     ShowingImageButtonListener(Activity con) {
         context = con;

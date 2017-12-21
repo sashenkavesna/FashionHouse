@@ -5,7 +5,9 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.support.constraint.ConstraintLayout;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
@@ -76,6 +78,7 @@ public class GameActivity extends Activity {
         ImageButton but1 = (ImageButton) findViewById(R.id.button_girl1);
         ImageButton but2 = (ImageButton) findViewById(R.id.button_girl2);
         ImageButton but3 = (ImageButton) findViewById(R.id.button_girl3);
+
 
         ShowingImageButtonListener butListener = new ShowingImageButtonListener(this);
         but1.setOnClickListener(butListener);

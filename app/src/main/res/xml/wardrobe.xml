@@ -36,13 +36,4 @@
         <img>stripedtop</img>
         <style>top</style>
     </clothes>
-    <clothes type="shoes">
-        <name>casual shoes</name>
-        <tissue
-            color="black"
-            print="without print">leather
-        </tissue>
-        <img>casualshoes</img>
-        <style>boots</style>
-    </clothes>
 </wardrobe>

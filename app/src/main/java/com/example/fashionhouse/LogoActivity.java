@@ -15,15 +15,9 @@ public class LogoActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_logo);
         overridePendingTransition(0, R.anim.fade_in_anim);
-
-        // new Handler().postDelayed(new Runnable() {
-        // @Override
-        // public void run() {
         Intent intent = new Intent(LogoActivity.this, GameActivity.class);
         startActivity(intent);
         finish();
-        //     }
-        //   }, 3000);
     }
 
 }

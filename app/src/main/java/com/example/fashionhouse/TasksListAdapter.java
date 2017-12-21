@@ -23,7 +23,8 @@ public class TasksListAdapter extends BaseAdapter {
     private TaskController taskController;
     private BonusController bonusController;
 
-    TasksListAdapter(TaskController taskController, Activity context, LookController lookController, BonusController bonusController) {
+    TasksListAdapter(TaskController taskController, Activity context,
+                     LookController lookController, BonusController bonusController) {
         this.taskController = taskController;
         this.tasks = taskController.getTasks().getTasks();
         this.lookController = lookController;

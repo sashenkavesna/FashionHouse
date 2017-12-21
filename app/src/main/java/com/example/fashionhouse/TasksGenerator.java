@@ -14,7 +14,7 @@ public class TasksGenerator {
     private List<String> styles;
     private List<String> clients;
     private List<String> occasions;
-    String taskText = "Hello! I need a fashion look for ";
+    private String taskText = "I need a fashion look for ";
 
     TasksGenerator() {
         colors = new ArrayList<String>();
@@ -26,10 +26,6 @@ public class TasksGenerator {
         addClient();
         addOccasion();
     }
-
-   /* public void addClients(String client){
-        clients.add(client);
-    }*/
 
     public void addColors(String color) {
         colors.add(color);
@@ -66,13 +62,12 @@ public class TasksGenerator {
         int styleNum = (int) (Math.random() * styles.size());
         task.getClothes().setStyle(styles.get(styleNum));
         int occasionNum = (int) (Math.random() * occasions.size());
-        String taskText = "Hello!I need a fashion look for ";
         taskText = taskText.concat(occasions.get(occasionNum) + ". ");
         taskText = taskText.concat("I prefer " + styles.get(styleNum) + "." + " I would like clothes to be ");
         if (!styles.get(styleNum).equals("dress")) {
-            for (int i = 0; i < 2; i++) {
+           // for (int i = 0; i < 2; i++) {
                 generateTissue();
-            }
+            //}
         }
         task.setTaskText(taskText);
         taskText = "";

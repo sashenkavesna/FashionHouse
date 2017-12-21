@@ -22,7 +22,11 @@ public class Look {
     public Clothes getLatestClothes() {
         return look.get(look.size() - 1);
     }
+
     public Clothes getPreviousClothes() {
+        if (look.size() < 2) {
+            return null;
+        }
         return look.get(look.size() - 2);
     }
 
@@ -37,13 +41,9 @@ public class Look {
                 look.remove(clothes);
                 break;
             } else if (!clothes.getType().equals("shoes")) {
-                if (clothes.getType().equals("top") && newClothes.getType().equals("all")) {
-                    look.remove(clothes);
-                    break;
-                } else if (clothes.getType().equals("bottom") && newClothes.getType().equals("all")) {
-                    look.remove(clothes);
-                    break;
-                } else if (clothes.getType().equals("all")) {
+                    if ((clothes.getType().equals("top") && newClothes.getType().equals("all")) ||
+                        (clothes.getType().equals("bottom") && newClothes.getType().equals("all")) ||
+                        (clothes.getType().equals("all"))) {
                     look.remove(clothes);
                     break;
                 }

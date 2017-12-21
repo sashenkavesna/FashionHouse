@@ -37,22 +37,20 @@ public class GridsItemListener implements AdapterView.OnItemClickListener, Adapt
         lookController.setLook(look);
 
 
-        ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(168, 400);
+        ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(120, 280);
         params.rightToRight = R.id.image_girl1;
         params.leftToLeft = R.id.image_girl1;
         params.topToTop = R.id.image_girl1;
         if (!clothes.getType().equals("bottom")) {
-            params.leftMargin = 17;
+            params.leftMargin = 8;
             if (clothes.getType().equals("top")) {
                 params.topMargin = 5;
             } else if (clothes.getType().equals("all")) {
-                params.topMargin = 102;
+                params.topMargin = 72;
             } else if (clothes.getType().equals("shoes")) {
-                params.topMargin = 450; // проверить!
             }
         } else {
-            params.leftMargin = 3;
-            params.topMargin = 230;
+            params.topMargin = 165;
         }
 
         if (look.getLatestClothes().getType().equals("all") || look.getLatestClothes().getType().equals("top")) {
@@ -68,7 +66,7 @@ public class GridsItemListener implements AdapterView.OnItemClickListener, Adapt
             img1.setImageResource(look.getLatestClothes().getImgId());
             layout.addView(img1, params);
         } else if (look.getLatestClothes().getType().equals("bottom") ) {
-            if(look.getPreviousClothes()!=null && look.getPreviousClothes().getType().equals("all")){
+            if(look.getPreviousClothes()==null || look.getPreviousClothes().getType().equals("all")){
                     img1.setVisibility(View.INVISIBLE);
             }
             if (img2 != null) {
@@ -86,7 +84,7 @@ public class GridsItemListener implements AdapterView.OnItemClickListener, Adapt
             layout.addView(img3, params);
         }
         view.setBackgroundResource(R.drawable.rectangle);
-        previousClothes = look.getLatestClothes();
+   //     previousClothes = look.getLatestClothes();
 
     }
 

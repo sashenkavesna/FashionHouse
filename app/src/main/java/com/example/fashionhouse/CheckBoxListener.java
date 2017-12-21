@@ -9,11 +9,11 @@ import java.util.List;
 
 public class CheckBoxListener implements CompoundButton.OnCheckedChangeListener {
     private List<Task> tasks;
-    TasksListAdapter adapter;
-    LookController lookController;
-    TaskController taskController;
-    BonusController bonusController;
-    Activity context;
+    private TasksListAdapter adapter;
+    private LookController lookController;
+    private TaskController taskController;
+    private BonusController bonusController;
+    private Activity context;
     CheckBoxListener(TasksListAdapter adapter){
         this.tasks=adapter.getTasks();
         this.adapter=adapter;

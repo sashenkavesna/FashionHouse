@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_name"
+        android:fontFamily="casual"
+        app2:layout_constraintLeft_toLeftOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/task"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        app2:layout_constraintRight_toRightOf="@+id/task_name"
+        app2:layout_constraintTop_toBottomOf="@+id/task_name"
+        android:layout_marginStart="16dp"
+        app2:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:layout_width="31dp"
+        android:layout_height="48dp"
+        android:id="@+id/checkBox"
+        app2:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        app2:layout_constraintLeft_toRightOf="@+id/task_name" />
+</android.support.constraint.ConstraintLayout>

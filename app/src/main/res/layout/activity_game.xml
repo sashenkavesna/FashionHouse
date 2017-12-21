@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bitmap"
+    tools:context="com.example.fashionhouse.GameActivity"
+    tools:ignore="MissingConstraints">
+
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/tasksList"
+        app:layout_constraintRight_toLeftOf="@+id/image_sketchbook"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_girl2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+         />
+
+    <ImageView
+        android:layout_width="268dp"
+        android:src="@drawable/sketchbook"
+        android:id="@+id/image_sketchbook"
+        android:layout_gravity="center"
+        android:layout_height="319dp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription=""
+        app:layout_constraintHorizontal_bias="0.32"
+        android:focusable="false" />
+
+    <ImageView
+        android:layout_width="84dp"
+        android:src="@drawable/girl1"
+        android:scaleType="fitCenter"
+        android:id="@+id/image_girl1"
+        android:layout_height="240dp"
+        app:layout_constraintTop_toTopOf="@+id/image_sketchbook"
+        app:layout_constraintBottom_toBottomOf="@+id/image_sketchbook"
+        app:layout_constraintRight_toRightOf="@+id/image_sketchbook"
+        app:layout_constraintLeft_toLeftOf="@+id/image_sketchbook"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:id="@+id/button_girl1"
+        app:layout_constraintRight_toRightOf="@+id/image_sketchbook"
+        app:layout_constraintTop_toTopOf="@+id/image_sketchbook"
+        app:layout_constraintLeft_toRightOf="@+id/image_girl1"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_sketchbook"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="84dp"
+        android:src="@drawable/girl3"
+        android:scaleType="fitCenter"
+        android:id="@+id/image_girl3"
+        android:layout_height="240dp"
+        app:layout_constraintTop_toTopOf="@+id/image_sketchbook"
+        app:layout_constraintBottom_toBottomOf="@+id/image_sketchbook"
+        app:layout_constraintRight_toRightOf="@+id/image_sketchbook"
+        app:layout_constraintLeft_toLeftOf="@+id/image_sketchbook"
+        android:layout_marginBottom="16dp"
+        android:contentDescription=""
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:id="@+id/button_girl3"
+        app:layout_constraintLeft_toRightOf="@+id/image_girl3"
+        app:layout_constraintRight_toRightOf="@+id/image_sketchbook"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintBottom_toBottomOf="@+id/image_sketchbook"
+        android:layout_marginBottom="80dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:id="@+id/button_girl2"
+        app:layout_constraintTop_toBottomOf="@+id/button_girl1"
+        app:layout_constraintLeft_toLeftOf="@+id/button_girl1"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:layout_width="84dp"
+        android:src="@drawable/girl2"
+        android:scaleType="fitCenter"
+        android:id="@+id/image_girl2"
+        android:layout_height="240dp"
+        app:layout_constraintTop_toTopOf="@+id/image_sketchbook"
+        app:layout_constraintBottom_toBottomOf="@+id/image_sketchbook"
+        app:layout_constraintRight_toRightOf="@+id/image_sketchbook"
+        app:layout_constraintLeft_toLeftOf="@+id/image_sketchbook"
+        android:layout_marginBottom="16dp"
+        android:contentDescription=""
+        android:visibility="invisible" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="210dp"
+        android:id="@+id/grid_layout"
+        android:layout_height="367dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#7FFFFFFF"
+        android:elevation="1dp">
+
+        <TextView
+            android:text="Wardrobe"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/wardrobe_text"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteY="50dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="70dp"
+            android:id="@+id/info"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/rectangle"
+
+            app:layout_constraintTop_toBottomOf="@+id/clothesTable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <GridView
+            android:id="@+id/clothesTable"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp"
+            android:numColumns="2"
+            android:layout_width="205dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="3dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="32dp">
+
+
+        </GridView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coins"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18sp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wardrobe>
+    <clothes type="all">
+        <name>romantic dress</name>
+        <tissue
+            color="pink"
+            print="without print">lace
+        </tissue>
+        <img>romanticdress</img>
+        <style>dress</style>
+    </clothes>
+    <clothes type="bottom">
+        <name>floral pants</name>
+        <tissue
+            color="orange"
+            print="floral">cotton
+        </tissue>
+        <img>floralpants</img>
+        <style>pants</style>
+    </clothes>
+    <clothes type="top">
+        <name>floral sweather</name>
+        <tissue
+            color="white"
+            print="floral">cotton
+        </tissue>
+        <img>floralsweather</img>
+        <style>sweather</style>
+    </clothes>
+    <clothes type="top">
+        <name>striped top</name>
+        <tissue
+            color="multicolor"
+            print="stripes">cotton
+        </tissue>
+        <img>stripedtop</img>
+        <style>top</style>
+    </clothes>
+    <clothes type="shoes">
+        <name>casual shoes</name>
+        <tissue
+            color="black"
+            print="without print">leather
+        </tissue>
+        <img>casualshoes</img>
+        <style>boots</style>
+    </clothes>
+</wardrobe>

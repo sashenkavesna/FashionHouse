@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FashionHouse</string>
+
+    <string name="pers1">ол</string>
+    <string name="pers2">FashionHouse</string>
+    <string name="pers3">FashionHouse</string>
+    <string name="pers4">FashionHouse</string>
+    <string name="pers5">FashionHouse</string>
+
+    <string name="task1">FashionHouse</string>
+    <string name="task2">FashionHouse</string>
+    <string name="task3">FashionHouse</string>
+    <string name="task4">FashionHouse</string>
+
+    <string name="clothes1">FashionHouse</string>
+    <string name="clothes2">FashionHouse</string>
+</resources>
